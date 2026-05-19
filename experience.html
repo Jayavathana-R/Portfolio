@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experience - Jayavathana P R</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=3"/>
+</head>
+<body>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Jayavathana <span class="dot">P R</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="experience section page-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What I've Done</span>
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+
+        <div class="experience-timeline">
+          <div class="exp-card current">
+            <div class="exp-left">
+              <div class="exp-icon">
+                <i class="ph ph-laptop-code"></i>
+              </div>
+              <div class="exp-line"></div>
+            </div>
+            <div class="exp-body">
+              <div class="exp-meta">
+                <span class="exp-badge current-badge">Current</span>
+                <span class="exp-date"><i class="ph ph-calendar"></i> Mar 2026 - Present</span>
+              </div>
+              <h3 class="exp-title">Software Developer Intern</h3>
+              <p class="exp-company"><i class="ph ph-buildings"></i> Muthu Soft Labs Pvt Ltd, Chennai</p>
+              <ul class="exp-points">
+                <li>Currently working as a Software Developer Intern gaining real-world development exposure.</li>
+                <li>Gaining practical experience in software development and project workflows.</li>
+                <li>Working on improving coding, debugging, and application development skills.</li>
+              </ul>
+              <div class="exp-tags">
+                <span>Software Development</span><span>Debugging</span><span>Team Collaboration</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-left">
+              <div class="exp-icon">
+                <i class="ph ph-code"></i>
+              </div>
+            </div>
+            <div class="exp-body">
+              <div class="exp-meta">
+                <span class="exp-badge completed-badge">Completed</span>
+                <span class="exp-date"><i class="ph ph-calendar"></i> July 2025</span>
+              </div>
+              <h3 class="exp-title">Full Stack Development Intern</h3>
+              <p class="exp-company"><i class="ph ph-buildings"></i> Gateway Software Solutions, Madurai</p>
+              <ul class="exp-points">
+                <li>Completed internship in Full Stack Development.</li>
+                <li>Learned the fundamentals of frontend and backend development.</li>
+                <li>Worked on developing responsive web pages and understanding development processes.</li>
+              </ul>
+              <div class="exp-tags">
+                <span>HTML</span><span>CSS</span><span>Full Stack</span><span>Responsive Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">Jayavathana <span class="dot">P R</span></div>
+      <p class="footer-copy">&copy; 2026 Jayavathana P R. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      toggle.classList.toggle('active');
+    });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      links.classList.remove('open');
+      toggle.classList.remove('active');
+    }));
+  </script>
+</body>
+</html>
